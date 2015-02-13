@@ -1,0 +1,107 @@
+{
+  "subject": {
+    "flexisolve": "PT. Flexisolve",
+    "masolusion": "Maxima Analitika Solusi",
+    "pkjkt": "Parkour Jakarta",
+    "skyworx": "Skyworx",
+    "hik": "Harta Insan Karimah"
+  },
+  "website": {
+    "flexisolve": "flexisolve.co.id",
+    "masolusion": "masolusion.com",
+    "pkjkt": "parkourjakarta.com"
+  },
+  "portfolios": {
+    "flexisolve": {
+      "public": [
+        "/assets/imgs/flexisolve.co.id/1.png",
+        "/assets/imgs/flexisolve.co.id/2.png",
+        "/assets/imgs/flexisolve.co.id/3.png",
+        "/assets/imgs/flexisolve.co.id/4.png",
+        "/assets/imgs/flexisolve.co.id/5.png"
+      ],
+      "internal": [
+        "/assets/imgs/flexisolve.co.id operational management/1.png",
+        "/assets/imgs/flexisolve.co.id operational management/2.png",
+        "/assets/imgs/flexisolve.co.id operational management/4.png",
+        "/assets/imgs/flexisolve.co.id operational management/5.png",
+        "/assets/imgs/flexisolve.co.id operational management/6.png",
+        "/assets/imgs/flexisolve.co.id operational management/7.png",
+        "/assets/imgs/flexisolve.co.id operational management/8.png",
+        "/assets/imgs/flexisolve.co.id operational management/9.png",
+        "/assets/imgs/flexisolve.co.id operational management/10.png",
+        "/assets/imgs/flexisolve.co.id operational management/11.png",
+        "/assets/imgs/flexisolve.co.id operational management/12.png",
+        "/assets/imgs/flexisolve.co.id operational management/13.png",
+        "/assets/imgs/flexisolve.co.id operational management/14.png",
+        "/assets/imgs/flexisolve.co.id operational management/15.png",
+        "/assets/imgs/flexisolve.co.id operational management/16.png",
+        "/assets/imgs/flexisolve.co.id operational management/17.png",
+        "/assets/imgs/flexisolve.co.id operational management/18.png",
+        "/assets/imgs/flexisolve.co.id operational management/19.png",
+        "/assets/imgs/flexisolve.co.id operational management/20.png",
+        "/assets/imgs/flexisolve.co.id operational management/21.png",
+        "/assets/imgs/flexisolve.co.id operational management/22.png",
+        "/assets/imgs/flexisolve.co.id operational management/23.png",
+        "/assets/imgs/flexisolve.co.id operational management/24.png",
+        "/assets/imgs/flexisolve.co.id operational management/25.png",
+        "/assets/imgs/flexisolve.co.id operational management/26.png",
+        "/assets/imgs/flexisolve.co.id operational management/27.png",
+        "/assets/imgs/flexisolve.co.id operational management/28.png",
+        "/assets/imgs/flexisolve.co.id operational management/29.png"
+      ]
+    },
+    "masolusion": {
+
+    },
+    "pkjkt": {
+      "public": [
+
+      ],
+      "internal": [
+
+      ]
+    },
+    "skyworx": [
+      "/assets/imgs/skyworx/dashboard1.png",
+      "/assets/imgs/skyworx/dashboard2.png",
+      "/assets/imgs/skyworx/dashboard3.png",
+      "/assets/imgs/skyworx/dashboard4.png",
+      "/assets/imgs/skyworx/dashboard5.png",
+      "/assets/imgs/skyworx/1.jpg",
+      "/assets/imgs/skyworx/2.jpg",
+      "/assets/imgs/skyworx/3.jpg",
+      "/assets/imgs/skyworx/4.jpg",
+      "/assets/imgs/skyworx/5.jpg",
+      "/assets/imgs/skyworx/6.jpg",
+      "/assets/imgs/skyworx/7.jpg",
+      "/assets/imgs/skyworx/8.jpg",
+      "/assets/imgs/skyworx/9.jpg",
+      "/assets/imgs/skyworx/10.jpg",
+      "/assets/imgs/skyworx/11.jpg",
+      "/assets/imgs/skyworx/12.jpg",
+      "/assets/imgs/skyworx/13.jpg",
+      "/assets/imgs/skyworx/14.jpg",
+      "/assets/imgs/skyworx/15.jpg",
+      "/assets/imgs/skyworx/16.jpg",
+      "/assets/imgs/skyworx/17.jpg",
+      "/assets/imgs/skyworx/18.jpg",
+      "/assets/imgs/skyworx/19.jpg",
+      "/assets/imgs/skyworx/20.jpg",
+      "/assets/imgs/skyworx/21.jpg",
+      "/assets/imgs/skyworx/22.jpg"
+    ],
+    "hik": [
+      "/assets/imgs/harta insan karimah/1.png",
+      "/assets/imgs/harta insan karimah/2.png",
+      "/assets/imgs/harta insan karimah/3.png",
+      "/assets/imgs/harta insan karimah/4.png",
+      "/assets/imgs/harta insan karimah/5.png",
+      "/assets/imgs/harta insan karimah/6.png",
+      "/assets/imgs/harta insan karimah/7.png",
+      "/assets/imgs/harta insan karimah/8.png",
+      "/assets/imgs/harta insan karimah/9.png",                 
+      "/assets/imgs/harta insan karimah/10.png"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+@import "_settings";
+
+html, body {
+  //background-color: $primecolor;
+  overflow: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: auto;
+}
+
+.konten {
+  padding: 0;
+  //margin: auto;
+}
+
+.menu {
+  text-align: right;
+  @extend .vertical-center;
+  position: fixed;
+  background-color: rgb(107, 185, 240);
+  top: 0; left: 0; bottom: 0;
+}
+
+nav {
+  ul {
+    li {
+      font-size: 1.6em;
+      border-bottom: 1px solid #cfcfcf;
+      padding: 20px 0;
+    }
+  }
+}
+
+.content-block {
+  border-bottom: 1px solid #cfcfcf;
+  padding: 10px 20px 10px 20px;
+  &:hover {
+    background-color: rgb(52, 152, 219);
+  }
+}

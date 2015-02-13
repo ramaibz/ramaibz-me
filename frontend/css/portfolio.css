@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Bad+Script);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://fonts.googleapis.com/css?family=BenchNine:300);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+.vertical-center, .portfolio, #porto1, #porto2, #porto3, #porto4, #porto5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.portfolio {
+  height: 100vh;
+  text-align: center; }
+  .portfolio p {
+    width: 50%;
+    margin: 0 auto; }
+  .portfolio h1 {
+    font-family: 'Bad Script', cursive; }
+
+#porto1, #porto2, #porto3, #porto4, #porto5 {
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto; }
+  #porto1 h1, #porto2 h1, #porto3 h1, #porto4 h1, #porto5 h1 {
+    padding: 20px 0 20px 0;
+    text-align: center; }
+
+.thumbnail-container {
+  margin: 0 auto; }
+
+.thumbnail img {
+  height: 100px; }
+
+#slide:focus {
+  outline: none; }
+
+.pages {
+  -webkit-transition-property: background;
+          transition-property: background;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s; }
+
+.pages:hover {
+  background: #333; }

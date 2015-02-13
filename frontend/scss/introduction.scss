@@ -1,0 +1,51 @@
+@import "_settings";
+
+.introduction {
+  //text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  p {
+    //width: 50%;
+    //margin: auto;
+  }
+  h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 4em;
+  }
+  .wrapper {
+    padding: 0 50px;
+    p {
+      width: 50%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.3em;
+    }
+  }
+}
+
+#intro1 {
+  background-color: #DDD;
+  h1 {
+    //border-bottom: 1px solid #333;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #9f9f9f;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    width: 500px;
+    //font-weight: bold;
+    //font-style: italic;
+  }
+}
+#intro2 {
+  //margin-top: 100%;
+  //height:100%;
+  color: #efefef;
+  background-color: #333;
+  h1 {
+    letter-spacing: 2px;
+    border-bottom: 3px solid #9f9f9f;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    width: 500px;
+  }
+}

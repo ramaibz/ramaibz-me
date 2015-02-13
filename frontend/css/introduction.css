@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Bad+Script);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://fonts.googleapis.com/css?family=BenchNine:300);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+.vertical-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.introduction {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .introduction h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 4em; }
+  .introduction .wrapper {
+    padding: 0 50px; }
+    .introduction .wrapper p {
+      width: 50%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.3em; }
+
+#intro1 {
+  background-color: #DDD; }
+  #intro1 h1 {
+    letter-spacing: 2px;
+    border-bottom: 3px solid #9f9f9f;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    width: 500px; }
+
+#intro2 {
+  color: #efefef;
+  background-color: #333; }
+  #intro2 h1 {
+    letter-spacing: 2px;
+    border-bottom: 3px solid #9f9f9f;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    width: 500px; }

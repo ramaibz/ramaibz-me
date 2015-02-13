@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Bad+Script);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://fonts.googleapis.com/css?family=BenchNine:300);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin single-page() {
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  @extend .vertical-center;
+  h1 {
+    padding: 20px 0 20px 0;
+    //background-color: #DDD;
+    text-align: center;
+  }
+}

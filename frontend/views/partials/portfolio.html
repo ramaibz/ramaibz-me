@@ -1,0 +1,89 @@
+<sliding scrolling ng-model="index" setpages="#porto" tabindex="0" id="slide">
+  <div class="portfolio pages" id="porto0">
+    <div class="wrapper">
+      <h1>my works</h1>
+      {{ index + 1 }}
+      <hr>
+      <p>
+        This website is one of my works. Started from scratch, using bootstrap, angular.js and scss. As for the backend, i used Node.js and ***.js to help with SEO. Also gulp for task automation, such as concat, minifying, gzipping, optimizing images, etc.
+      </p><br>
+      <p>These are works that i could get from 2011 before a series of accident struck my computer and i didn't aware the existence of cloud storage. Things that are completely vanished are Java SE and C#.</p>
+    </div>
+  </div>
+  <div id="porto1" class="pages">
+    <div class="col-md-12">
+      <h1>{{ vm.flexisolvePublic }} <br><small><a href="http://www.flexisolve.co.id" target="_blank">{{ vm.flexisolveWebPublic }}</a></small></h1>
+      
+
+      <div class="thumbnail-container">
+        <div class="col-xs-6 col-md-4" data-ng-repeat="img in vm.flexisolveImgsPublic.thumbnail">
+          <a href="#" class="thumbnail">
+            <img src="{{ img }}" alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="porto2" class="pages">
+    <div class="col-md-12">
+      <h1>Anonymous</h1>
+      <p>
+        In this work, I used PHP, MySQL, Jquery, and AJAX. I downloaded the UI from the internet.
+      </p>
+      <div class="thumbnail-container">
+        <div class="col-xs-6 col-md-2" data-ng-repeat="img in vm.flexisolveImgsIntern.thumbnail">
+          <a href="#" class="thumbnail">
+            <img src="{{ img }}" alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="porto3" class="pages">
+    <div class="col-md-12">
+      <h1>Anonymous</h1>
+      <p>
+        Using 3rd party plugin such as Morris.js and Flot.js to render charts. UI downloaded from the internet. Jquery, AJAX, PHP for the backend, MySQL to store data.
+      </p>
+      <div class="thumbnail-container">
+        <div class="col-xs-6 col-md-2" data-ng-repeat="img in vm.skyworxImgs.thumbnail">
+          <a href="#" class="thumbnail">
+            <img src="{{ img }}" alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="porto4" class="pages">
+    <div class="col-md-12">
+      <h1>Anonymous</h1>
+    <p>
+      My first attempt doing Object-Oriented-PHP and angular.js with less jquery script included.
+    </p>
+    <div class="thumbnail-container">
+      <div class="col-xs-6 col-md-2" data-ng-repeat="img in vm.hikImgs.thumbnail">
+        <a href="#" class="thumbnail">
+          <img src="{{ img }}" alt="...">
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="porto5" class="pages">
+    <div class="col-md-12">
+      <h1>Parkour Jakarta</h1>
+    <p>
+      Start from scratch work. At frontend section, i used Foundation instead Bootstrap. Trying to use less jquery, only to support Foundation parts. Grunt as a task runner to optimize the scripts and images.
+      At the backend, i used Node.js / Express, Mongo DB / Mongoose.
+      For the authentication, i'm using token based approach which is JWT. As for the infrastructure, i used Amazon S3 to store static files.
+    </p>
+    <div class="thumbnail-container">
+      <div class="col-xs-6 col-md-2" data-ng-repeat="img in vm.hikImgs">
+        <a href="#" class="thumbnail">
+          <img src="{{ img }}" alt="...">
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</sliding>

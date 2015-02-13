@@ -1,0 +1,26 @@
+{
+  "name": "ramaibz.me",
+  "version": "alpha",
+  "authors": [
+    "Prananda <ramaibz@gmail.com>"
+  ],
+  "description": "vendor libs",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-ui-router": "latest",
+    "angular-animate": "latest",
+    "angular-resource": "latest",
+    "bootstrap": "latest",
+    "modernizr": "latest"
+  }
+}
