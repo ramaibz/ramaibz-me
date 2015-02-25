@@ -2,7 +2,10 @@
 
 html, body {
   //background-color: $primecolor;
-  overflow: hidden;
+  //overflow: hidden;
+}
+a {
+  text-decoration: none;
 }
 
 .container-fluid {
@@ -21,22 +24,43 @@ html, body {
   position: fixed;
   background-color: rgb(107, 185, 240);
   top: 0; left: 0; bottom: 0;
-}
+  padding: 0;
 
-nav {
   ul {
+    width: 100%;
     li {
-      font-size: 1.6em;
-      border-bottom: 1px solid #cfcfcf;
-      padding: 20px 0;
+      width: 80%;
+      margin: 0 auto;
+
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in;
+
+      &:hover {
+        background-color: rgb(52, 152, 219);
+        width: 100%;
+
+        h2 {
+          color: #efefef;
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .activem {
+    background-color: rgb(52, 152, 219);
+    width: 100%;
+    h2 {
+      color: white;
     }
   }
 }
 
 .content-block {
-  border-bottom: 1px solid #cfcfcf;
+  //border-bottom: 1px solid #cfcfcf;
   padding: 10px 20px 10px 20px;
-  &:hover {
-    background-color: rgb(52, 152, 219);
-  }
 }

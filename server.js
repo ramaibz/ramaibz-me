@@ -21,6 +21,7 @@ var helmet          = require('helmet');
 var favicon         = require('serve-favicon');
 //var expressJwt      = require('express-jwt');
 //var jwt             = require('jsonwebtoken');
+var compression = require('compression');
 
 // init database
 
@@ -28,13 +29,14 @@ var favicon         = require('serve-favicon');
 var port = process.env.PORT || 1122;
 
 // essential middleware
+app.use(compression());
 app.use(helmet());
-app.use(cookies('ramaibz123009', {
+app.use(cookies('ramaibz', {
   httpOnly: true,
   secure: true
 }));
 app.use(session({
-  secret: 'ramaibz123009',
+  secret: 'ramaibz',
   resave: true,
   saveUninitialized: true
 }));
@@ -60,7 +62,7 @@ app.use('/', function(req, res) {
 
 // start server
 var server = app.listen(port, function () {
-  var host = '127.0.0.1';
+  var host = 'server';
   var port = server.address().port;
   console.log('listening at http://%s:%s', host, port);
 });

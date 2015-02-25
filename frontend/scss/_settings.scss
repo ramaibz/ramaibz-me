@@ -1,13 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Bad+Script);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-@import url(http://fonts.googleapis.com/css?family=News+Cycle);
-@import url(http://fonts.googleapis.com/css?family=BenchNine:300);
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+// @import url(http://fonts.googleapis.com/css?family=Bad+Script);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+// @import url(http://fonts.googleapis.com/css?family=News+Cycle);
+// @import url(http://fonts.googleapis.com/css?family=BenchNine:300);
+// @import url(http://fonts.googleapis.com/css?family=Amatic+SC);
 
 .vertical-center {
   display: flex;
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
 }
 
 @mixin single-page() {

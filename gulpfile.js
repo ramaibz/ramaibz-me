@@ -84,6 +84,7 @@ gulp.task('vendor-js', function() {
 gulp.task('serve-app-css', function() {
   var dest = 'frontend/css/';
   return gulp.src('frontend/scss/*.scss')
+    .pipe(x.plumber())
     .pipe(x.changed(dest))
     .pipe(x.sass())
     .pipe(x.autoprefixer('last 2 versions', '> 5%'))
@@ -93,6 +94,7 @@ gulp.task('serve-app-css', function() {
 gulp.task('build-app-css', ['serve-app-css'], function() {
   var dest = 'dist/assets/css/';
   return gulp.src('frontend/css/*.css')
+    .pipe(x.plumber())
     .pipe(x.concat('app.css'))
     .pipe(gulp.dest(dest))
     .pipe(x.minifyCss())
@@ -105,6 +107,7 @@ gulp.task('build-app-css', ['serve-app-css'], function() {
 
 gulp.task('serve-app-js', function() {
   return gulp.src(['frontend/angular/*.js', 'frontend/angular/**/*.js'])
+    .pipe(x.plumber())
     .pipe(x.concat('app.js'))
     .pipe(gulp.dest('frontend/js/'))
     .pipe(gulp.dest('dist/assets/js'))
@@ -113,6 +116,7 @@ gulp.task('serve-app-js', function() {
 gulp.task('build-app-js', ['serve-app-js'], function() {
   var dest = 'dist/assets/js/';
   return gulp.src('frontend/js/*.js')
+    .pipe(x.plumber())
     .pipe(x.uglify({ mangle: false }))
     .pipe(x.rename({ suffix: '.min' }))
     .pipe(gulp.dest(dest))
@@ -163,11 +167,11 @@ gulp.task('spy', function() {
   gulp.watch('frontend/views/partials/*.html', ['partials']);
   gulp.watch('frontend/scss/*.scss', ['build-app-css']);
   gulp.watch(['frontend/angular/*.js', 'frontend/angular/**/*.js'], ['build-app-js']);
-  gulp.watch('imgs/**/*.{jpg,png}', ['img-opt']);
+  gulp.watch('imgs/**/*.{jpg,png}', ['img-opt', 'img-thumbnail']);
   gulp.watch('data/portfolio.json', ['data']);
 });
 
 gulp.task('shazam', ['clean'], function() {
-  return gulp.start(['vendor-js', 'build-app-js', 'vendor-css', 'build-app-css', 'build-html', 'glyphfont', 'img-opt', 'data']);
+  return gulp.start(['vendor-js', 'build-app-js', 'vendor-css', 'build-app-css', 'build-html', 'glyphfont', 'img-opt', 'img-thumbnail', 'data']);
 });
 gulp.task('default', ['browser-sync', 'nodemon', 'spy']);

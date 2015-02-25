@@ -1,0 +1,42 @@
+@import "_settings";
+
+.blog {
+  //border-bottom: 1px solid #efefef;
+  padding: 20px;
+  text-align: right;
+}
+
+.blog-topic {
+  //background-color: #777;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  &:hover {
+    overflow-y: scroll;
+  }
+}
+
+.blog-header {
+  //margin: 0 auto;
+  text-align: right;
+
+  h1 {
+    color: rgb(218, 223, 225);
+  }
+}
+
+.blog-content {
+  padding: 0 30px 30px 30px;
+  .blog-content-header {
+    text-align: right;
+    height: 300px;
+    @extend .vertical-center;
+    background-color: #DDD;
+    h1 {
+      padding: 20px 40px 0px 20px;
+      //background: #9f9f9f;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -4,10 +4,11 @@ angular
 
 function portfolioFactory($http, $q) {
   var results = {};
+  var src = '/assets/portfolio.json';
   results.getPortfolio = function() {
     var result = $q.defer();
-    $http
-      .get('assets/portfolio.json')
+    var portfolio = $http
+      .get(src)
       .success(function(data) {
         result.resolve(data);
       })

@@ -1,0 +1,35 @@
+.vertical-center, .blog-content .blog-content-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.blog {
+  padding: 20px;
+  text-align: right; }
+
+.blog-topic {
+  position: absolute;
+  top: 0;
+  bottom: 0; }
+  .blog-topic:hover {
+    overflow-y: scroll; }
+
+.blog-header {
+  text-align: right; }
+  .blog-header h1 {
+    color: #dadfe1; }
+
+.blog-content {
+  padding: 0 30px 30px 30px; }
+  .blog-content .blog-content-header {
+    text-align: right;
+    height: 300px;
+    background-color: #DDD; }
+    .blog-content .blog-content-header h1 {
+      padding: 20px 40px 0px 20px;
+      text-transform: uppercase; }
