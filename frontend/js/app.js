@@ -41,7 +41,7 @@ angular
 
 function introController() {
   var vm = this;
-
+  
 }
 
 angular
@@ -303,7 +303,7 @@ angular
 
 function portfolioFactory($http, $q) {
   var results = {};
-  var src = 'https://d1ageymrjbrol5.cloudfront.net/assets/portfolio.json';
+  var src = '/assets/portfolio.json';
   results.getPortfolio = function() {
     var result = $q.defer();
     var portfolio = $http

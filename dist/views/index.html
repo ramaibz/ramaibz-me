@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" type="text/css" href="/assets/css/vendor.min.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/app.css" />
+  <link rel="stylesheet" type="text/css" href="<%= cdn %>/assets/css/vendor.min.css" />
+  <link rel="stylesheet" type="text/css" href="<%= cdn %>/assets/css/app.min.css" />
   <base href="/"></base>
 </head>
 
-<body>
+<body ng-controller="MenuController as vm">
   <div class="container-fluid">
-    <div shortcutkey class="menu col-md-2" ng-controller="MenuController as vm">
+    <div shortcutkey class="menu col-md-2">
 
       <ul class="list-unstyled">
         <li ng-class="{ activem: vm.location.path() == '/introduction' }"><a ui-sref="intro"><div class="content-block">
@@ -37,7 +37,8 @@
       </div>
 
   </div>
-  <script src="/assets/js/vendor.min.js" charset="utf-8"></script>
-  <script src="/assets/js/app.js" charset="utf-8"></script>
+
+  <script src="<%= cdn %>/assets/js/vendor.min.js" charset="utf-8"></script>
+  <script src="<%= cdn %>/assets/js/app.min.js" charset="utf-8"></script>
 </body>
 </html>

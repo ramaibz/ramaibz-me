@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var x = require('gulp-load-plugins')();
 var bs = require('browser-sync');
+var env = 'production';
 
 var src = {
   vendorCss: [
@@ -50,7 +51,7 @@ gulp.task('partials', function() {
 gulp.task('build-html', ['views', 'partials'], function() {
   return gulp.src(['dist/views/*.html', 'dist/views/partials/*.html'])
     .pipe(x.minifyHtml({ empty: true }))
-    .pipe(gulp.dest('dist/views/htmlmin/'));
+    .pipe(gulp.dest('dist/views/minified/'));
 });
 
 // -- flatten, concat, minify-css, rename
@@ -151,7 +152,8 @@ gulp.task('data', function() {
 
 gulp.task('nodemon', function() {
   return x.nodemon({
-    script: 'server.js'
+    script: 'server.js',
+    env: { NODE_ENV: env }
   })
 })
 

@@ -28,6 +28,13 @@ var compression = require('compression');
 // port
 var port = process.env.PORT || 1122;
 
+console.log(process.env.NODE_ENV);
+//app.set('env', 'development');
+var env = app.get('env');
+if('development' === env) {
+  app.use(morgan('dev'));
+}
+
 // essential middleware
 app.use(compression());
 app.use(helmet());
@@ -45,7 +52,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use(methodOverride());
-app.use(morgan('dev'));
+
 
 // JWT
 //app.set('jwtSecret', 'ramaibz123009');
@@ -57,12 +64,18 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.set('views', __dirname + '/dist/');
 app.use('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'dist/views/', 'index.html'));
+  if(env === 'production') {
+    res.render('views/minified/index.html', { cdn: 'http://cdn.ramaibz.me' } );
+  }
+  else {
+    //res.sendFile(path.join(__dirname, 'dist/views/', 'index.html'));
+    res.render('views/index.html', { cdn: '' } );
+  }
 })
 
 // start server
 var server = app.listen(port, function () {
   var host = 'server';
   var port = server.address().port;
-  console.log('listening at http://%s:%s', host, port);
+  console.log('listening at http://%s:%s on %s', host, port, env);
 });
