@@ -165,8 +165,8 @@ gulp.task('browser-sync', function() {
 })
 
 gulp.task('spy', function() {
-  gulp.watch('frontend/views/*.html', ['views']);
-  gulp.watch('frontend/views/partials/*.html', ['partials']);
+  gulp.watch('frontend/views/*.html', ['build-html']);
+  gulp.watch('frontend/views/partials/*.html', ['build-html']);
   gulp.watch('frontend/scss/*.scss', ['build-app-css']);
   gulp.watch(['frontend/angular/*.js', 'frontend/angular/**/*.js'], ['build-app-js']);
   gulp.watch('imgs/**/*.{jpg,png}', ['img-opt', 'img-thumbnail']);
