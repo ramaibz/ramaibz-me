@@ -28,6 +28,8 @@ function movePage(ScrollTop) {
     var anim = false;
     var evt;
     ngModel.$setViewValue(0);
+    attrs.$set('totalpages', pageLength);
+    scope.totalpages = pageLength;
 
     ScrollTop.scroll(page + '0', 0);
     onwhat === 'keydown' ? elem.focus() : ''; // focus the div element to make sliding works

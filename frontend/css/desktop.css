@@ -1,0 +1,19 @@
+.vertical-center, .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media screen and (min-width: 975px) {
+  .menu {
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0; }
+    .menu .wrapper .sub-menu {
+      position: relative; } }

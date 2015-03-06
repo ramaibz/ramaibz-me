@@ -1,0 +1,29 @@
+.vertical-center, .dashboard {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.dashboard {
+  margin: 45px;
+  padding: 20px 20px;
+  background-color: #68c3a3;
+  height: 90vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  .dashboard h1 {
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 30px; }
+  .dashboard .article-list {
+    height: 100%;
+    overflow: auto; }
+    .dashboard .article-list div {
+      border-bottom: 1px solid #efefef; }

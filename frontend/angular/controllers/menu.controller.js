@@ -13,4 +13,6 @@ function menuController($location, $document) {
   vm.isActive = function(item) {
     return vm.selected === item;
   }
+
+  vm.showMenu = false;
 }

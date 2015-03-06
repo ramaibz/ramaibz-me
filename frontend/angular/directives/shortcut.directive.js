@@ -17,7 +17,7 @@ function shortcutKey($document, $location) {
         var evt = event.keyCode || event.charCode;
         evt === 97 || evt === 49 ? fApply('/introduction') : '';
         evt === 98 || evt === 51 ? fApply('/blog') : '';
-        evt === 112 || evt === 50 ? fApply('/portfolio') : '';
+        evt === 112 || evt === 50 ? fApply('/works') : '';
       })
     }
   }

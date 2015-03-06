@@ -1,16 +1,22 @@
 <sliding scrolling ng-model="index" setpages="#intro" tabindex="0" class="slide">
+<div class="col-md-12 indicator">
+    <h3><small>page</small> {{ index + 1 }} of {{ totalpages }} </h3>
+  </div>
 <div class="introduction pages isActiveFirst" id="intro0">
-  <div class="wrapper col-md-12">
-    <h1>Hi! I'm Rama!</h1>
-    <p>My full name is Prananda Ramadhan, <myage></myage> years old,</p>
-    <p>a fresh graduate from BINUS, Information System major, Business Intelligence sub-major.</p>
-    <p>I'm craving for a fullstack developer roads, and more than just a developer.</p>
-    <p>I can't do illustrator or photoshop, but i have the sense of good design.</p>
-    <p>I'm striving on the path of becoming a polyglot. My mothertongue is Bahasa,</p>
-    <p>and currently studying English, Svenska, German, Arabic, and Japanese.</p>
 
-    <p>I'm looking for an office job related to tech sector,</p>
-    <p>i need a stable financial income to sustain my goals, and climb higher.</p>
+  <div class="wrapper col-md-12">
+    <h1>Hello!</h1>
+    <p>My name is Prananda Ramadhan, <myage></myage> years old,</p>
+    <p>a fresh graduate from BINUS, Information System major, Business Intelligence sub-major.</p>
+    <p>I'm walking on the fullstack developer road that's a never ending journeys</p>
+    <p>and i want more than just a web developer.</p>
+
+    <p>Currently, I'm a job seeker.</p>
+    <br>
+    <span class="glyphicon glyphicon-earphone"></span> +62 812 8207 7579
+    <br>
+    <span class="glyphicon glyphicon-envelope"></span>
+    ramaibz at gmail
     <!-- <p>
       Not actually fresh though. I'm graduated in 2013, doing freelance stuff since 2011. But, today and onwards, i want to extend my knowledge which i couldn't get from just being a freelancer, by joining a company or a startup who had many experienced people who aim towards the better future.
     </p>
@@ -42,22 +48,24 @@
 </div>
 
 <div class="introduction pages" id="intro1">
-  <div class="wrapper col-md-5">
-    <h1>I'm adapted with ...</h1>
+  <div class="wrapper col-md-5 col-xs-12">
     <div class="col-md-12">
       <div class="tool-set">
-        <span>Node.Js. Express</span>
+        <h3>Adapted Tools</h3>
+        <hr>
+        <span>Node.Js <small>Express</small></span>
         <span>Angular.Js</span>
         <span>Jquery</span>
-        <span>NoSQL. MongoDB</span>
-        <span>SQL. MySQL, MsSQL</span>
-        <span>HTML5, CSS3/SCSS</span>
-        <span>CSS Framework. Bootstrap, Foundation</span>
-        <span>Task Automation, Gulp/Grunt</span>
+        <span>NoSQL<small>MongoDB (mongoose)</small></span>
+        <span>SQL<small>MySQL</small></span>
+        <span>HTML5, CSS3, SCSS</span>
+        <span>CSS Framework<small>Bootstrap, Foundation</small></span>
+        <span>Task Automation<small>Gulp, Grunt</span>
         <span class="not-in-focus">PHP</span>
-        <span>Some IaaS (Amazon S3, Openshift/Heroku, Cloudflare)</span>
-        <span>Some API (Twillio, MailGun, etc)</span>
-        <span>Webserver (Nginx, Apache)</span>
+        <span>Some IaaS<small>Amazon S3, Cloudfront</small></span>
+        <span>Some PaaS<small>Openshift, Heroku</small></span>
+        <span>Some API<small>Twillio, MailGun, etc</small></span>
+        <span>Webserver<small>Nginx, Apache</small></span>
         <span class="not-in-focus">VB.net</span>
         <span class="not-in-focus">Java SE</span>
         <span class="not-in-focus">C#</span>

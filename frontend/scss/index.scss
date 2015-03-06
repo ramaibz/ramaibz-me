@@ -1,8 +1,9 @@
 @import "_settings";
 
 html, body {
-  //background-color: $primecolor;
+  background-color: #efefef;
   //overflow: hidden;
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -19,48 +20,114 @@ a {
 }
 
 .menu {
-  text-align: right;
-  @extend .vertical-center;
-  position: fixed;
-  background-color: rgb(107, 185, 240);
-  top: 0; left: 0; bottom: 0;
+  z-index: 3;
   padding: 0;
+  background-color: rgb(107, 185, 240);
 
-  ul {
+  a {
+    text-decoration: none;
+  }
+  p {
+
+  }
+
+  .wrapper {
+    padding: 0;
     width: 100%;
-    li {
-      width: 80%;
-      margin: 0 auto;
-
+    .sub-menu {
+      display: none;
       transition-property: all;
       transition-duration: 0.2s;
       transition-timing-function: ease-in;
-
       &:hover {
         background-color: rgb(52, 152, 219);
-        width: 100%;
-
         h2 {
           color: #efefef;
         }
       }
     }
-  }
+    .activem {
+      background-color: rgb(52, 152, 219);
+      padding: 0;
+      h2 {
+        color: white;
+      }
+    }
 
-  a {
-    text-decoration: none;
-  }
+    .mobile-menu {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background-color: #5C97BF;
+      text-align: center;
 
-  .activem {
-    background-color: rgb(52, 152, 219);
-    width: 100%;
-    h2 {
-      color: white;
+      span {
+        color: #EFEFEF;
+        font-size: 2em;
+        z-index: 100;
+        padding: 10px 0 15px 0;
+      }
     }
   }
+  .mobile-menu1 {
+    position: fixed;
+    display: none;
+    top: 0; left: 0; right: 0;
+    background-color: #5C97BF;
+    color: white;
+
+    a {
+      color: #EFEFEF;
+    }
+    & > div {
+      border-bottom: 1px solid #fff;
+
+    }
+  }
+  .mobilemenuhide {
+    display: block;
+    z-index: 100;
+  }
+
 }
 
 .content-block {
   //border-bottom: 1px solid #cfcfcf;
   padding: 10px 20px 10px 20px;
 }
+
+.pages {
+  color: #34495E;
+  padding: 30px;
+  background: #efefef;
+  opacity: 1;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 50px;
+
+  .portfolio-content {
+    //padding-right: 40px;
+    small {
+      font-size: 20px;
+    }
+  }
+
+  &:nth-child(even) {
+    //background: #efefef;
+  }
+
+  div {
+    padding: 0;
+  }
+}
+
+.slide:focus {
+  outline: none;
+}
+
+.indicator {
+  display: none;
+  h3 {
+    color: #3f3f3f;
+  }
+}
+
+

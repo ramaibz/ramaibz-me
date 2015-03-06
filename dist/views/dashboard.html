@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ramaibz dashboard</title>
+    <meta name="description" content="No longer than 155 characters." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="<%= cdn %>/assets/css/vendor<%= suffix %>.css" />
+    <link rel="stylesheet" type="text/css" href="<%= cdn %>/assets/css/app<%= suffix %>.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row dashboard">
+        <div class="col-md-3 article-list">
+          <div class="">
+            <h1>title 1</h1>
+          </div>
+          <div class="">
+            <h1>title 1</h1>
+          </div>
+          <div class="">
+            <h1>title 1</h1>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div ui-view></div>
+          <h1>Article</h1>
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="article.title" placeholder="Title">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="article.tags" placeholder="Tag">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="article.tags" placeholder="tags">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

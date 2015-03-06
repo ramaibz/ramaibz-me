@@ -21,6 +21,7 @@
     "angular-animate": "latest",
     "angular-resource": "latest",
     "bootstrap": "latest",
-    "modernizr": "latest"
+    "modernizr": "latest",
+    "fastclick": "~1.0.6"
   }
 }

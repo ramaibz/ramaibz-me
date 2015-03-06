@@ -19,8 +19,8 @@ function routes($stateProvider, $urlRouterProvider, $locationProvider) {
       controller: 'IntroController',
       controllerAs: 'vm'
     })
-    .state('portfolio', {
-      url: '/portfolio',
+    .state('works', {
+      url: '/works',
       templateUrl: '/views/partials/portfolio.html',
       controller: 'PortfolioController',
       controllerAs: 'vm'
@@ -61,21 +61,30 @@ function portfolioController(PortfolioFactory, $scope) {
   }
 
   var oldIndex;
+
   vm.getPhoto = function(subject, index, obj) {
     if(subject[index] !== oldIndex) {
       $scope.bool = false;
       vm.photo = subject[index];
       oldIndex = vm.photo;
+      console.log(oldIndex);
     }
 
     $('div.thumbnail').removeClass('active-thumbnail');
     $(obj.currentTarget).addClass('active-thumbnail');
   }
 
+  vm.closePhoto = function() {
+    $scope.bool = false;
+    vm.photo = ' ';
+    oldIndex = "";
+  }
+
   $scope.$watch('index', function() {
     $('.thumbnail').removeClass('active-thumbnail');
     vm.photo = ' ';
   })
+
   PortfolioFactory.getPortfolio().then(function(data) {
     vm.flx = {
       name: data.FLX.name,
@@ -140,6 +149,8 @@ function menuController($location, $document) {
   vm.isActive = function(item) {
     return vm.selected === item;
   }
+
+  vm.showMenu = false;
 }
 
 function myage() {
@@ -152,9 +163,9 @@ function myage() {
   }
 
   return {
-        restrict: 'EA',
-        link: getAge
-    }
+    restrict: 'EA',
+    link: getAge
+  }
 }
 
 angular
@@ -269,7 +280,7 @@ function shortcutKey($document, $location) {
         var evt = event.keyCode || event.charCode;
         evt === 97 || evt === 49 ? fApply('/introduction') : '';
         evt === 98 || evt === 51 ? fApply('/blog') : '';
-        evt === 112 || evt === 50 ? fApply('/portfolio') : '';
+        evt === 112 || evt === 50 ? fApply('/works') : '';
       })
     }
   }
@@ -303,10 +314,10 @@ angular
 
 function portfolioFactory($http, $q) {
   var results = {};
-  var src = '/assets/portfolio.json';
+  var src = 'portfolio.json';
   results.getPortfolio = function() {
     var result = $q.defer();
-    var portfolio = $http
+    $http
       .get(src)
       .success(function(data) {
         result.resolve(data);
@@ -349,6 +360,8 @@ function movePage(ScrollTop) {
     var anim = false;
     var evt;
     ngModel.$setViewValue(0);
+    attrs.$set('totalpages', pageLength);
+    scope.totalpages = pageLength;
 
     ScrollTop.scroll(page + '0', 0);
     onwhat === 'keydown' ? elem.focus() : ''; // focus the div element to make sliding works

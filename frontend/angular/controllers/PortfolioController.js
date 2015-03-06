@@ -15,21 +15,30 @@ function portfolioController(PortfolioFactory, $scope) {
   }
 
   var oldIndex;
+
   vm.getPhoto = function(subject, index, obj) {
     if(subject[index] !== oldIndex) {
       $scope.bool = false;
       vm.photo = subject[index];
       oldIndex = vm.photo;
+      console.log(oldIndex);
     }
 
     $('div.thumbnail').removeClass('active-thumbnail');
     $(obj.currentTarget).addClass('active-thumbnail');
   }
 
+  vm.closePhoto = function() {
+    $scope.bool = false;
+    vm.photo = ' ';
+    oldIndex = "";
+  }
+
   $scope.$watch('index', function() {
     $('.thumbnail').removeClass('active-thumbnail');
     vm.photo = ' ';
   })
+
   PortfolioFactory.getPortfolio().then(function(data) {
     vm.flx = {
       name: data.FLX.name,

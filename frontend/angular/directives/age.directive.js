@@ -8,9 +8,9 @@ function myage() {
   }
 
   return {
-        restrict: 'EA',
-        link: getAge
-    }
+    restrict: 'EA',
+    link: getAge
+  }
 }
 
 angular

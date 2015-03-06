@@ -13,8 +13,8 @@ function routes($stateProvider, $urlRouterProvider, $locationProvider) {
       controller: 'IntroController',
       controllerAs: 'vm'
     })
-    .state('portfolio', {
-      url: '/portfolio',
+    .state('works', {
+      url: '/works',
       templateUrl: '/views/partials/portfolio.html',
       controller: 'PortfolioController',
       controllerAs: 'vm'

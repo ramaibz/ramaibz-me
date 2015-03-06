@@ -1,4 +1,4 @@
-.vertical-center, .menu {
+.vertical-center {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7,6 +7,10 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+html, body {
+  background-color: #efefef;
+  height: 100%; }
 
 a {
   text-decoration: none; }
@@ -19,36 +23,78 @@ a {
   padding: 0; }
 
 .menu {
-  text-align: right;
-  position: fixed;
-  background-color: #6bb9f0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 0; }
-  .menu ul {
+  z-index: 3;
+  padding: 0;
+  background-color: #6bb9f0; }
+  .menu a {
+    text-decoration: none; }
+  .menu .wrapper {
+    padding: 0;
     width: 100%; }
-    .menu ul li {
-      width: 80%;
-      margin: 0 auto;
+    .menu .wrapper .sub-menu {
+      display: none;
       -webkit-transition-property: all;
               transition-property: all;
       -webkit-transition-duration: 0.2s;
               transition-duration: 0.2s;
       -webkit-transition-timing-function: ease-in;
               transition-timing-function: ease-in; }
-      .menu ul li:hover {
-        background-color: #3498db;
-        width: 100%; }
-        .menu ul li:hover h2 {
+      .menu .wrapper .sub-menu:hover {
+        background-color: #3498db; }
+        .menu .wrapper .sub-menu:hover h2 {
           color: #efefef; }
-  .menu a {
-    text-decoration: none; }
-  .menu .activem {
-    background-color: #3498db;
-    width: 100%; }
-    .menu .activem h2 {
-      color: white; }
+    .menu .wrapper .activem {
+      background-color: #3498db;
+      padding: 0; }
+      .menu .wrapper .activem h2 {
+        color: white; }
+    .menu .wrapper .mobile-menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #5C97BF;
+      text-align: center; }
+      .menu .wrapper .mobile-menu span {
+        color: #EFEFEF;
+        font-size: 2em;
+        z-index: 100;
+        padding: 10px 0 15px 0; }
+  .menu .mobile-menu1 {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #5C97BF;
+    color: white; }
+    .menu .mobile-menu1 a {
+      color: #EFEFEF; }
+    .menu .mobile-menu1 > div {
+      border-bottom: 1px solid #fff; }
+  .menu .mobilemenuhide {
+    display: block;
+    z-index: 100; }
 
 .content-block {
   padding: 10px 20px 10px 20px; }
+
+.pages {
+  color: #34495E;
+  padding: 30px;
+  background: #efefef;
+  opacity: 1;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 50px; }
+  .pages .portfolio-content small {
+    font-size: 20px; }
+  .pages div {
+    padding: 0; }
+
+.slide:focus {
+  outline: none; }
+
+.indicator {
+  display: none; }
+  .indicator h3 {
+    color: #3f3f3f; }

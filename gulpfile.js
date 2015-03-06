@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var x = require('gulp-load-plugins')();
 var bs = require('browser-sync');
-var env = 'production';
+var env = 'development'; // 'development' || 'production'
 
 var src = {
   vendorCss: [
@@ -16,7 +16,8 @@ var src = {
     'vendor/angular-animate/angular-animate.js',
     'vendor/angular-resource/angular-resource.js',
     'vendor/angular-ui-router/release/angular-ui-router.js',
-    'vendor/bootstrap/dist/js/bootstrap.js'
+    'vendor/bootstrap/dist/js/bootstrap.js',
+    'vendor/fastclick/lib/fastclick.js'
   ]
 }
 
@@ -146,7 +147,7 @@ gulp.task('img-thumbnail', function() {
 
 gulp.task('data', function() {
   return gulp.src('data/portfolio.json')
-    .pipe(gulp.dest('dist/assets/'))
+    .pipe(gulp.dest('dist/'))
     .pipe(bs.reload({ stream: true }));
 })
 
